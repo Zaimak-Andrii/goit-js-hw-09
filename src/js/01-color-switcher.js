@@ -1,3 +1,5 @@
+const CHANGE_BACKGROUND_DELAY = 1000;
+
 const refs = {
   body: document.body,
   start: document.querySelector('[data-start]'),
@@ -27,7 +29,7 @@ function startInterval() {
   setStartButtonEnabled(false);
   changeBodyBacgroundColor();
 
-  interval.start(changeBodyBacgroundColor, 1000);
+  interval.start(changeBodyBacgroundColor, CHANGE_BACKGROUND_DELAY);
 }
 
 function stopInterval() {
