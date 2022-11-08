@@ -35,6 +35,12 @@ class CountDownTimer {
     };
   }
 
+  /**
+   * Start timer.
+   *
+   * @param {Date} date
+   * @param {Function | null} cb Call, when timer is complete.
+   */
   start(date, cb = null) {
     // Stop previous timer
     if (this.#interval.isStarted()) {
