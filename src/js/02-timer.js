@@ -49,6 +49,7 @@ class CountDownTimer {
 
     let delta = this.#dateDeltaInMilleseconds(date);
 
+    this.#date = date;
     this.#updateTimer(delta);
     this.#interval.start(() => {
       delta -= this.#SECOND;
